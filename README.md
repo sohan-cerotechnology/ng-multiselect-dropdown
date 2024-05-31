@@ -1,6 +1,9 @@
 # Angular Multiselect Dropdown
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![npm version](https://img.shields.io/npm/v/ng-multiselect-dropdown.svg)](https://www.npmjs.com/package/ng-multiselect-dropdown)
@@ -14,6 +17,19 @@ Angular multiselect dropdown component for web applications. Easy to integrate a
 ![demo](Screenshots/ng-multiselect-dropdown_v0.1.6.gif)
 
 ## Getting Started
+
+<iframe src="https://codesandbox.io/embed/dawn-bush-z4kgg?fontsize=18&hidenavigation=1&module=%2Fsrc%2FRooks.js&theme=dark&editorsize=60"
+    style={{
+        width: "100%",
+        height: 500,
+        border: 0,
+        borderRadius: 4,
+        overflow: "hidden"
+    }}
+     title="dawn-bush-z4kgg"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## Features
 
@@ -33,14 +49,14 @@ npm install ng-multiselect-dropdown
 And then include it in your module (see [app.module.ts](https://github.com/NileshPatel17/ng-multiselect-dropdown/blob/master/src/app/app.module.ts)):
 
 ```ts
-import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import { NgMultiSelectDropDownModule } from "ng-multiselect-dropdown";
 // ...
 
 @NgModule({
   imports: [
-    NgMultiSelectDropDownModule.forRoot()
+    NgMultiSelectDropDownModule.forRoot(),
     // ...
-  ]
+  ],
   // ...
 })
 export class AppModule {}
@@ -90,9 +106,9 @@ export class AppComponent implements OnInit {
 ```html
 <ng-multiselect-dropdown
   [placeholder]="'custom placeholder'"
-  [settings]="dropdownSettings"
   [data]="dropdownList"
   [(ngModel)]="selectedItems"
+  [settings]="dropdownSettings"
   (onSelect)="onItemSelect($event)"
   (onSelectAll)="onSelectAll($event)"
 >
@@ -122,8 +138,7 @@ export class AppComponent implements OnInit {
 | noDataAvailablePlaceholderText | String     | Custom text when no data is available.                                                                                                                                                                                                                                                                                                                   | 'No data available' |
 | closeDropDownOnSelection       | Boolean    | Closes the dropdown when item is selected. applicable only in cas of single selection                                                                                                                                                                                                                                                                    | false               |
 | defaultOpen                    | Boolean    | open state of dropdown                                                                                                                                                                                                                                                                                                                                   | false               |
-| allowRemoteDataSearch                    | Boolean    | allow search remote api if no data is present.                                                                                                                                                                                                                                                                                                                                   | false               |
-
+| allowRemoteDataSearch          | Boolean    | allow search remote api if no data is present.                                                                                                                                                                                                                                                                                                           | false               |
 
 ### Callback Methods
 
@@ -143,11 +158,11 @@ export class AppComponent implements OnInit {
 
 - The component package has a themes folder in node_modules at `ng-multiselet-dropdown\themes\ng-multiselect-dropdown.theme.scss`
 - Include the `ng-multiselet-dropdown.theme.css` in `angular-cli.json` (for versions below angular 6) and `angular.json` (for version 6 or more).
-- [Refer this file](https://github.com/NileshPatel17/ng-multiselect-dropdown/blob/master/custom-theme.md) on how to add the css file to your angular project.
+- [Refer this file](https://github.com/NileshPatel17/ng-multiselect-dropdown/blob/master/custom-theme.md) on how to add the scss file to your angular project.
 <img src="Screenshots/theme-step-3.png" width="800">
 <!-- ![](Screenshots/theme-step-3.png) -->
 
-## Custom Template(in beta):
+## Custom Template:
 
 ### Variables can be used in template
 
@@ -169,7 +184,6 @@ Template for selected item
 </ng-template>
 ```
 
-[Demo](https://codesandbox.io/s/custom-template-uyo0o?file=/src/app/app.component.html)
 ### Run locally
 
 - Clone the repository or downlod the .zip,.tar files.
@@ -216,12 +230,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://sacgro.com"><img src="https://avatars1.githubusercontent.com/u/1292182?v=4" width="100px;" alt=""/><br /><sub><b>Sachin Grover</b></sub></a><br /><a href="https://github.com/Nilesh Patel/ng-multiselect-dropdown/commits?author=sacgrover" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/WWL-MikeRoberts"><img src="https://avatars3.githubusercontent.com/u/9750056?v=4" width="100px;" alt=""/><br /><sub><b>Mike Roberts</b></sub></a><br /><a href="https://github.com/Nilesh Patel/ng-multiselect-dropdown/commits?author=WWL-MikeRoberts" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/DsosaV"><img src="https://avatars2.githubusercontent.com/u/3926475?v=4" width="100px;" alt=""/><br /><sub><b>David Sosa</b></sub></a><br /><a href="https://github.com/Nilesh Patel/ng-multiselect-dropdown/commits?author=DsosaV" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/gserg"><img src="https://avatars.githubusercontent.com/u/687825?v=4" width="100px;" alt=""/><br /><sub><b>Sergiy Gedeon</b></sub></a><br /><a href="https://github.com/Nilesh Patel/ng-multiselect-dropdown/commits?author=gserg" title="Code">💻</a></td>
   </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

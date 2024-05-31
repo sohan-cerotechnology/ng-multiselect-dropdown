@@ -9,7 +9,7 @@ import { createTestingModule, tickAndDetectChanges } from './helper';
   template: ``
 })
 class Ng2MultiSelectDropdownMultipleSelectWithDisableItemComponent {
-  @ViewChild(MultiSelectComponent)
+  @ViewChild(MultiSelectComponent, { static: false })
   select: MultiSelectComponent;
   cities = [
     { item_id: 1, item_text: 'Mumbai' },

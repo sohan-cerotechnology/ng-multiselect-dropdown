@@ -3,9 +3,9 @@
 # compiled output
 /dist
 /dist-lib
+/lib
 /tmp
 /out-tsc
-/.angular
 dist-lib.tgz
 
 # dependencies

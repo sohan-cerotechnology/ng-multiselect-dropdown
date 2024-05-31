@@ -12,7 +12,7 @@ import {CodeViewerComponent} from './code-viewer';
   exports: [CodeViewerComponent]
 })
 export class ShCodeViewer {
-  static forRoot(): ModuleWithProviders<ShCodeViewer> {
+  static forRoot(): ModuleWithProviders {
     return {
       ngModule: ShCodeViewer,
       providers: []
